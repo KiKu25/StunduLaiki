@@ -9,12 +9,60 @@
     tools:showIn="@layout/activity_main">
 
     <TextView
+        android:id="@+id/stunda1"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        android:layout_height="20dp"
+        app:layout_constraintRight_toLeftOf="@+id/guideline2"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginTop="16dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <TextView
+        android:id="@+id/stundsLaiks1"
+        android:layout_width="89dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/stunda1"
+        app:layout_constraintTop_toTopOf="@+id/stunda1"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1" />
+
+    <android.support.constraint.Guideline
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/guideline"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="16dp"
+        app:layout_constraintGuide_percent="0.044444446" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline2"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="344dp"
+        app:layout_constraintGuide_percent="0.95555556" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline3"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="115dp"
+        app:layout_constraintGuide_percent="0.31944445" />
 
 </android.support.constraint.ConstraintLayout>
