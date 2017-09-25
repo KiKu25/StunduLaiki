@@ -63,6 +63,17 @@ public class Stundas {
         pirmdiena.add("astota");
         pirmdiena.add("devita");
 
+        otrdiena.add("2pirma");
+        otrdiena.add("2otra");
+        otrdiena.add("2tresa");
+        otrdiena.add("2ceturta");
+        otrdiena.add("2piekta");
+        otrdiena.add("2sesta");
+        otrdiena.add("2septita");
+        otrdiena.add("2astota");
+        otrdiena.add("2devita");
+
+        updateStunduSkaits();
     }
 
     public String getStunda(int diena, int stunda){
@@ -81,6 +92,16 @@ public class Stundas {
     }
 
     public int getStunduSkaits(int diena){
-        return stunduSkaits.get(diena);
+        updateStunduSkaits();
+        return stunduSkaits.get(diena - 1);
+    }
+
+    private void updateStunduSkaits(){
+        stunduSkaits.clear();
+        stunduSkaits.add(pirmdiena.size());
+        stunduSkaits.add(otrdiena.size());
+        stunduSkaits.add(tresdiena.size());
+        stunduSkaits.add(ceturdiena.size());
+        stunduSkaits.add(ceturdiena.size());
     }
 }

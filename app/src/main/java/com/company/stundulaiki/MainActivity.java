@@ -36,8 +36,8 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    private int stunduSkaits = 9; //TODO: make this use a stunduSaraksts class
-    private int diena = 1; // TODO: 17.09.2017 Make this use a getter for the day
+    private int stunduSkaits;
+    private int diena = 2; // TODO: 17.09.2017 Make this use a getter for the day
 
     Laiki laiki;
     LaikiHelper laikiHelper;
@@ -56,6 +56,8 @@ public class MainActivity extends AppCompatActivity {
         laiki = new Laiki();
         laikiHelper = new LaikiHelper();
         stunda = new Stundas();
+
+        stunduSkaits = stunda.getStunduSkaits(diena);
 
         Log.d("STATE", "Running Stundas");
 
